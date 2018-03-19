@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "Humza PasswordTest"
+AuthUserFile "/Users/Nazeeha/Desktop/March Break Tech Camp/RBC Tech Camp API/.htpasswd"
+
+<Limit GET POST>
+require valid-user
+</Limit>
