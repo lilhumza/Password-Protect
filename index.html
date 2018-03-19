@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RBC Tech Camp Api Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<div onload= "myFunction()" id="password"> 
+<body>
+    <h1 id="centeredtexting">Google Maps API</h1>
+    <div id="map" style="width:100%;height:500px"></div>
+
+    <script>
+    function myMap() {
+      var mapCanvas = document.getElementById("map");
+      var myCenter = new google.maps.LatLng(43.616621,-79.5799); 
+      var mapOptions = {center: myCenter, zoom: 5};
+      var map = new google.maps.Map(mapCanvas,mapOptions);
+      var marker = new google.maps.Marker({
+        position: myCenter,
+        animation: google.maps.Animation.BOUNCE
+      });
+      marker.setMap(map);
+    }
+    </script>
+            
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-FEX1Nig5bmc5Sgs3MSHeKUn8MDzhILE&callback=myMap">
+    </script>
+</body>
+</div>
+</html>
